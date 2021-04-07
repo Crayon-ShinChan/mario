@@ -1,6 +1,7 @@
 import pygame
 import random
 
+
 class Game:
     def __init__(self):
         self.screen = pygame.display.get_surface()
@@ -15,10 +16,12 @@ class Game:
                     self.keys = pygame.key.get_pressed()
                 elif event.type == pygame.KEYUP:
                     self.keys = pygame.key.get_pressed()
-            self.screen.fill((
-                random.randint(0, 255), 
-                random.randint(0, 255), 
-                random.randint(0, 255),
-                ))
+            self.screen.fill(
+                (
+                    random.randint(0, 255),
+                    random.randint(0, 255),
+                    random.randint(0, 255),
+                )
+            )
             pygame.display.update()
             self.clock.tick(10)
