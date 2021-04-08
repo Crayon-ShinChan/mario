@@ -1,6 +1,5 @@
 import pygame
-from .. import setup
-from .. import tools
+from .. import tools, setup
 from .. import constants as C
 
 
